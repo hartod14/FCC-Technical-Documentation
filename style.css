@@ -1,0 +1,145 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: rgb(50, 50, 50);
+}
+
+body {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    font-size: 32px;
+    margin: 0px 0px 20px;
+    line-height: 40px;
+    letter-spacing: 0px;
+}
+
+@media (max-width: 800px) {
+    * {
+        font-size: 12px;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*----DOC----*/
+#main-doc {
+    margin: 20px 20px 20px 380px;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.main-section p,
+ul li {
+    margin-left: 20px;
+}
+
+code {
+    display: block;
+    margin-left: 30px;
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    border-radius: 2px;
+    color: rgb(110, 110, 110);
+    font-family: monospace;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+    #main-doc {
+        margin: 0px 0px 0px 0px;
+        padding: 20px;
+        width: auto;
+    }
+
+    .main-section p,
+    ul li {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    code {
+        margin-left: 0px;
+    }
+}
+
+
+/*----NAV----*/
+#navbar {
+    margin-top: 60px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
+    padding: 20px 0px 20px;
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar header {
+    position: fixed;
+    background-color: rgb(218, 217, 217);
+    left: 0px;
+    top: 0px;
+    padding: 20px 67px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav {
+    align-items: center;
+    height: auto;
+    padding: 20px 80px 20px 20px;
+    transition: 0.5s;
+}
+
+.nav:hover {
+    background-color: rgb(228, 230, 244);
+}
+
+@media (max-width: 800px) {
+    #navbar {
+        position: unset;
+        width: auto;
+        height: 120px;
+        text-align: center;
+        padding: 0px 0px 20px;
+    }
+
+    #navbar a {
+        font-size: 14px;
+    }
+
+    .nav {
+        padding: 10px 10px 10px 10px;
+    }
+
+    #navbar header {
+        padding: 10px 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+}
